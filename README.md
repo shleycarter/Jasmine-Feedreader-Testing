@@ -1,6 +1,6 @@
-# Jasmine Feedreader Test App
+# Jasmine RSS Feedreader Test App
 
-This is a simple javascript app that utilizes KnockoutJS for data binding. Data is being pulled from Google Maps and Foursquare using their respective API's. Clicking on a map location (dog park) shows the number of people that have checked in via Foursquare to that park. You can also show the location info by clicking on the list in the left hand drawer. The UI is Google's Material Design Lite.
+This is 
 
 ## Getting Started
 
@@ -14,11 +14,11 @@ cd /home/user/my_project
 
 ```
 
-Clone this repo to get all of the necessary javascript, CSS, HTML, and Image dependencies
+Clone this repo to get all of the necessary dependencies
 
 ```bash
 
-git clone https://github.com/shleycarter/TorontoMuseumMap.git
+git clone https://github.com/shleycarter/Jasmine-Feedreader-Testing.git
 
 ```
 
@@ -30,19 +30,14 @@ You can also preview a live version of this this app on the web [here](https://n
 
 ## Built With
 
-* [KnockoutJS](https://knockoutjs.com/) - Data Binding JS Library
-* [Material Design Lite](https://getmdl.io/) - UI Component Library
-* [Google Maps Javascript API](https://developers.google.com/maps/documentation/javascript/) - Mapping Data
-* [Foursquare API](https://developer.foursquare.com/) - Location Data
+* [Jasmine](http://jasmine.github.io/) - Simple JS testing framework
+* [JQuery](https://jquery.com/) - Feature Rich JS Library
+* [Handlebars](https://handlebarsjs.com/) - Semantic Templating JS Library
+* [Google Loader](https://developers.google.com/loader/) - Google API loader
 
 ## Author
 
 * **Ash Carter**
-
-## Acknowledgments
-
-* This was a really challenging Project to finish off the Udacity FEND, but I have definitely learned a lot in working through this.
-
 
 
 # Project Overview
