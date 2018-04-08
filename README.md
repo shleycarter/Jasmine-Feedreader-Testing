@@ -1,8 +1,9 @@
 # Jasmine RSS Feedreader Test App
 
 This is a simple Jasmine based test environment for an application.The test contains the following spec's:
+
 * RSS Feeds
-    - are defined
+  - are defined
     - URLs are defined
     - Names are defined
 * The Menu

@@ -86,14 +86,14 @@ $(function () {
         /* This test that ensures when the loadFeed
          * function is called and completes its work, there is at least
          * a single .entry element within the .feed container. */
-        
-         beforeEach(function (done) {
+
+        beforeEach(function (done) {
             loadFeed(0, function () {
                 done();
             });
         });
         it('has at least one entry in the feed', function () {
-            var entry = $('.entry');
+            var entry = $('.feed .entry');
 
             expect(entry.length).toBeGreaterThan(0);
         });
@@ -102,23 +102,18 @@ $(function () {
     /* NEW TEST SUITE named "New Feed Selection" */
 
     describe('New Feed Selection', function () {
-        var feedContent_1;
-        var feedContent_2;
 
         beforeEach(function (done) {
-            loadFeed(1, function () {
-                feedContent_1 = $('.feed').html();
-                done();
-            });
-        });
-
-        /* This test ensures that when a new feed is loaded
-         * by the loadFeed function that the content actually changes. */
-
-        it('changes feed content when loading new feed', function (done) {
-            loadFeed(2, function () {
-                expect($('.feed').html()).not.toEqual(feedContent_1);
-                done();
+            loadFeed(0, function () {
+                // feed 0 done loading
+                prevUrl = $('.feed').html();
+                loadFeed(1, function () {
+                    // feed 1 done loading
+                    newUrl = $('.feed').html();
+                    // all variables initialized, can begin tests
+                    expect(newUrl).not.toEqual(prevUrl);
+                    done();
+                });
             });
         });
     });
